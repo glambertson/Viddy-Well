@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<!--[if IE]><html class="ie"><![endif]-->
+<!--[if !IE]><html><![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<!-- BEGIN: REQUIRED FRAMEWORKS AND PLUG-IN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<!--<link href="http://vjs.zencdn.net/4.1/video-js.css" rel="stylesheet">
+<script src="//vjs.zencdn.net/4.1/video.js"></script>-->
+
+<link href="//vjs.zencdn.net/4.2/video-js.css" rel="stylesheet">
+<script src="//vjs.zencdn.net/4.2/video.js"></script>
+
+<script src="../src/jquery.viddywell.js"></script>
+<!-- END: REQUIRED FRAMEWORKS AND PLUG-IN -->
+
+</head>
+<body>
+	
+    <div class="yourclass" data-video="http://www.schweigertmeats.com/assets/video/coldones.mp4" data-poster="http://www.schweigertmeats.com/assets/video/coldones.jpg"></div>
+    
+    <script type="text/javascript">
+	jQuery(function($) {
+		$('.yourclass').ViddyWell();		
+		
+	});
+	</script>
+    
+</body>
+</html>

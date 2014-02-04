@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<!--[if IE]><html class="ie"><![endif]-->
+<!--[if !IE]><html><![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<!-- BEGIN: REQUIRED FRAMEWORKS AND PLUG-IN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<!--<link href="http://vjs.zencdn.net/4.1/video-js.css" rel="stylesheet">
+<script src="//vjs.zencdn.net/4.1/video.js"></script>-->
+
+<link href="//vjs.zencdn.net/4.2/video-js.css" rel="stylesheet">
+<script src="//vjs.zencdn.net/4.2/video.js"></script>
+
+<script src="../src/jquery.viddywell.js"></script>
+<!-- END: REQUIRED FRAMEWORKS AND PLUG-IN -->
+
+</head>
+<body>
+	
+    <div class="yourclass" data-video="http://www.schweigertmeats.com/assets/video/coldones.mp4" data-poster="http://www.schweigertmeats.com/assets/video/coldones.jpg"></div>
+    
+    <script type="text/javascript">
+	jQuery(function($) {
+		$('.yourclass').ViddyWell({
+			VideoWidth			:	800,
+			VideoHeight			: 	450,
+			
+			//
+			VideoAutoStart		:	false, 
+			
+			// You can include your own 'Play' button on your poster images or (false)
+			// use the Video JS 'Play' button (true)
+			VideoPlayButton		: 	false,
+			
+			// Will fill the screen
+			VideoFitScreen		:	false, 
+			
+			// If set true, you must also include a [filename]_mobile.mp4 video and 
+			// a [filename]_mobile.jpg poster image in same directory as video and poster files
+			VideoHasMobile 		:	true, 
+			
+			// This is an opportunity to track completion, trigger an event, or do nothing
+			VideoOnEnd : function() { 
+				alert('video done');
+			}
+		});		
+		
+	});
+	</script>
+    
+</body>
+</html>
