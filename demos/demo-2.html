@@ -22,27 +22,27 @@
 </head>
 <body>
 	
-    <div class="yourclass" data-video="http://www.schweigertmeats.com/assets/video/coldones.mp4" data-poster="http://www.schweigertmeats.com/assets/video/coldones.jpg"></div>
+    <div class="yourclass" data-video="http://vjs.zencdn.net/v/oceans.mp4" data-poster="http://www.videojs.com/img/poster.jpg"></div>
     
     <script type="text/javascript">
 	jQuery(function($) {
 		$('.yourclass').ViddyWell({
-			VideoWidth			:	800,
-			VideoHeight			: 	450,
+			VideoWidth			:	960,
+			VideoHeight			: 	400,
 			
 			//
 			VideoAutoStart		:	false, 
 			
 			// You can include your own 'Play' button on your poster images or (false)
 			// use the Video JS 'Play' button (true)
-			VideoPlayButton		: 	false,
+			VideoPlayButton		: 	true,
 			
 			// Will fill the screen
 			VideoFitScreen		:	false, 
 			
 			// If set true, you must also include a [filename]_mobile.mp4 video and 
 			// a [filename]_mobile.jpg poster image in same directory as video and poster files
-			VideoHasMobile 		:	true, 
+			VideoHasMobile 		:	false, 
 			
 			// This is an opportunity to track completion, trigger an event, or do nothing
 			VideoOnEnd : function() { 
