@@ -20,16 +20,19 @@
 <!-- END: REQUIRED FRAMEWORKS AND PLUG-IN -->
 
 </head>
-<body>
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
 	
-    <div class="yourclass" data-video="http://video-js.zencoder.com/oceans-clip.mp4" data-poster="http://video-js.zencoder.com/oceans-clip.png"></div>
+    <div style="width:960px;height:400px;margin:0;padding:0;position:relative;display:block;overflow:hidden;">
+    	<div class="yourclass" data-video="http://vjs.zencdn.net/v/oceans.mp4" data-poster="http://www.videojs.com/img/poster.jpg"></div>
+    </div>
     
     <script type="text/javascript">
 	jQuery(function($) {
 		$('.yourclass').ViddyWell({
+			VideoWidth			:	960, 
+			VideoHeight			:	400, 
 			VideoAutoStart		:	true,
 			VideoPlayButton		: 	false,
-			VideoFitScreen		:	true,
 			VideoHasMobile 		:	true
 		});		
 		
