@@ -13,7 +13,7 @@
 
 ##### Construct your video div using data- attributes to define your video file URI and poster image URI
 ```html
-<div class="yourclass" data-video="http://www.schweigertmeats.com/assets/video/coldones.mp4" data-poster="http://www.schweigertmeats.com/assets/video/coldones.jpg"></div>
+<div class="yourclass" data-video="http://video-js.zencoder.com/oceans-clip.mp4" data-poster="http://video-js.zencoder.com/oceans-clip.png"></div>
 ```
 
 ##### Call Viddy Well once the DOM is ready
