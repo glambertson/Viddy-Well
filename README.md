@@ -40,5 +40,5 @@ $('.yourclass').ViddyWell({
 ```
 
 ### Under The Hood
-- jQuery dependent
+- Dependent upon jQuery and Video JS files (JS + CSS)
 - 3 Kb
