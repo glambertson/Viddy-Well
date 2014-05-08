@@ -147,7 +147,7 @@
 				
 				/* ---- Fullscreen Listener ---- */
 				var AspectRatio = options.VideoWidth / options.VideoHeight;
-				AspectRatio = (AspectRatio > 1.5) ? 9/16 : 3/4;
+				//AspectRatio = (AspectRatio > 1.5) ? 9/16 : 3/4;
 	
 				if(options.VideoFitScreen) {
     				function resizeVideoJS(){
